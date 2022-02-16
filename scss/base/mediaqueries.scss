@@ -1,0 +1,349 @@
+
+/*MEDIAQUERIES*/
+
+/*MEDIAQUERIES ADAPTACION CELULAR*/
+
+/*MENU ADAPTACION CELULAR INDEX*/ 
+
+@media screen and (max-width: 768px) and (min-width: 320px){
+
+    body{
+        background: linear-gradient(90deg, rgba(208,221,241,1) 0%, rgba(235,241,246,1) 93%);
+    
+        header{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: "titulo menuM"
+                                  "logo menuM";
+                                
+            height: 500px;
+            width: 97%;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+            .bloqueLogoTitulo{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                margin-left: 25px;
+
+                .h1Index{
+                    width: auto;
+                    grid-area: titulo;
+                    font-size: 1.875rem;
+                }
+
+                .bloqueLogo{
+                    width: 60%;
+                    max-width: 246px;
+                    grid-area: logo;
+
+                    .logo{
+                        width: 100%;
+                        }
+                        
+                }
+            
+            }
+
+            .bloqueMenu{
+                margin-bottom: 30px;
+
+                .menu{
+                    grid-area: menuM;
+                    display: grid;
+                    grid-template-columns: auto;
+                    justify-content: end;
+                    align-content: end;
+
+                    li a{
+                        font-size: 20px;
+                        padding: 10px;
+                    }
+                }
+            }
+        
+        }
+
+    }
+
+
+
+    /*PRESENTACION INICIO INDEX*/
+
+    body{
+        .indexMain{
+            background-image: none;
+
+            .tituloMain{
+                font-size: map-get($fonts,mdss);
+                text-align: center;
+                color: rgb(5, 5, 124);
+            }
+
+            .bloqueUno{
+                display: grid;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                margin: 5px;
+
+                img{
+                    margin: 10px;
+                    width: 100%;
+                }
+
+                .parrafoMain{
+                    display: grid;
+                    justify-items: center;
+                    margin: 15px;
+
+                    h3{
+                        font-size: map-get($fonts,mdt);
+                        margin-bottom: 10px;
+                    }
+
+                    p{
+                        font-size: map-get($fonts,mt);
+                    }
+                }
+            
+            }
+            
+            .bloqueDos{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                grid-template-areas: "imagen"
+                                    "frase";
+                margin: 15px 0px;
+                justify-items: center;
+                align-items: center;
+
+
+                h3{
+                    grid-area: frase;
+                    font-size: map-get($fonts,mdtt);
+                    margin: 15px;
+                    text-align: center;
+                    margin-top: 40px;
+                }
+
+                img{
+                    grid-area: imagen;
+                    margin: 10px;
+                    width: 100%;
+                }
+            }
+
+            .bloqueTres{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                justify-items: center;
+                align-items: center;
+
+                img{
+                    justify-self: center;
+                    margin: 10px;
+                    width: 100%;
+                }
+
+                p{
+                    font-size: map-get($fonts,mdtt);
+                    text-align: center;
+                    margin: 10px;
+                }
+            }
+        }
+
+        .footerIndex{
+            .redes{
+                display: none;
+            }
+
+            .quienesSomos{
+                justify-items: center;
+                align-items: center;
+                width: 100%;
+
+                .h2Index{
+                    width: 60%;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+
+    
+ /*MEDIAQUERIES ADAPTACION CELULAR INFOTEC.HTML*/
+
+
+   .mainInfoTec{ 
+
+        .contenedorit{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+
+            .bloqueIt{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .carousel{
+                    width: 80%;
+                }
+                .contenedorTextoMain{
+                    display: flex;
+                    justify-items: center;
+                    width: 90%;
+                    font-size: map-get($fonts,mdtt);
+                }
+                h2{
+                    font-size: map-get($fonts,mdc);
+                }
+            }
+        }
+    }
+
+    .quienesSomos{
+        width: 100%;
+
+        .h2InfoTec{
+            width: 60%;
+        }
+
+        .h3InfoTec{
+            font-size: map-get($fonts,mdt);
+            width: 100%;
+        }
+    }
+    .redes{
+            img{
+                display: none;
+            }
+            .telefono{
+                display: none;
+            }
+            
+    }
+
+
+     /*MEDIAQUERIES ADAPTACION CELULAR CONTACTO.HTML*/
+
+     .mainContacto{
+         background-image: none;
+
+        .h2MainContacto{
+            width: 70%;
+        }
+
+         .container{
+             margin: 15px;
+         }
+     }
+
+
+    /*MEDIAQUERIES ADAPTACION CELULAR PRODUCTOS.HTML*/
+
+    .mainProd{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+    /*MEDIAQUERIES ADAPTACION CELULAR MYM.HTML*/
+
+    .bodyMm{
+        display: grid;
+        grid-template-areas: "headerMm"
+                            "mainMm"
+                            "footerMm";
+
+        .headerMm{
+            grid-area: headerMm;
+        }
+                    
+        .mainMm{
+            display: grid;
+            grid-area: mainMm;
+            grid-template-columns: auto;
+            justify-content: center;
+
+            .tituloMm{
+                margin: 0px;
+            }
+
+            .subtituloMm{
+                font-size: 25px;
+                width: 87%;
+                margin-top: 15px;
+            }
+
+            .imgBaldozas{
+                display: flex;
+                flex-direction: column;
+
+                img{
+                    margin: 30px 10px;
+                    padding: 10px;
+                    width: 65%;
+                }
+            }
+        }
+        
+        .bloqueInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+
+                .masInfoMm{
+                    font-size: 30px;
+                }
+
+                .dataMm{
+                    font-size: 30px;
+                    width: 80%;
+                text-align: center;
+                    margin-left: 20px;
+                }
+        }
+
+        .footerMm{
+            grid-area: footerMm;
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            
+            .quienesSomos{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-content: center;
+
+                .h2Mm{
+                    font-size: 30px;
+                    text-align: center;
+                    margin-left: 70px;
+                    justify-content: center;
+                    align-content: center;
+                    margin-right: 60px;
+                }
+
+            }
+
+            .redes{
+                display: none;
+            }
+        }
+    }

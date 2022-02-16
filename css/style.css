@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Mulish', sans-serif; }
+
+/* INDEX.HTML HEADER*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 230px; }
+  header .bloqueLogoTitulo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: 5px; }
+    header .bloqueLogoTitulo .h1Index {
+      display: inline-block;
+      width: 50%;
+      padding: 10px 15px;
+      border: #16167a solid 4px;
+      border-radius: 50px;
+      color: #272794;
+      font-size: 30px; }
+    header .bloqueLogoTitulo .bloqueLogo {
+      width: 25%;
+      max-width: 246px;
+      min-width: 200px; }
+      header .bloqueLogoTitulo .bloqueLogo .logo {
+        width: 100%; }
+  header .bloqueMenu {
+    display: inline-block;
+    padding: 5px;
+    text-align: center; }
+    header .bloqueMenu .menu {
+      padding: 0;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center; }
+      header .bloqueMenu .menu li a {
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+        border: #101079 solid 3px;
+        border-radius: 60px;
+        text-decoration: none;
+        font-size: 23px;
+        color: black;
+        text-align: center; }
+        header .bloqueMenu .menu li a:hover {
+          background-color: #e0e0ff; }
+
+header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .bloqueMenu .menu .infoTec, header .bloqueMenu .menu .mYm, header .bloqueMenu .menu .contacto {
+  background-color: #c4c4f7; }
+
+/*SCSS MAIN INDEX.HTML*/
+.indexMain {
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "tituloMain tituloMain tituloMain" "bloqueUno bloqueUno bloqueUno" "bloqueDos bloqueDos bloqueDos" "bloqueTres bloqueTres bloqueTres";
+  justify-content: center;
+  align-content: center;
+  font-family: 'Comfortaa', cursive;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_769032-MLA42274041282_062020-O.jpg);
+  background-size: cover; }
+  .indexMain .tituloMain {
+    grid-area: tituloMain;
+    font-size: 70px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #111125; }
+  .indexMain .bloqueUno {
+    grid-area: bloqueUno;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px; }
+    .indexMain .bloqueUno .parrafoMain {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: 100px; }
+      .indexMain .bloqueUno .parrafoMain h3 {
+        font-size: 40px; }
+      .indexMain .bloqueUno .parrafoMain p {
+        font-size: 30px;
+        font-weight: bold; }
+    .indexMain .bloqueUno .imgMain {
+      width: 30%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  .indexMain .bloqueDos {
+    grid-area: bloqueDos;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 0px 20px; }
+    .indexMain .bloqueDos h3 {
+      margin-right: 40px;
+      font-size: 50px; }
+    .indexMain .bloqueDos .imgMain {
+      width: 26%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  .indexMain .bloqueTres {
+    grid-area: bloqueTres;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 35px; }
+    .indexMain .bloqueTres p {
+      margin-left: 20px;
+      font-weight: bold; }
+    .indexMain .bloqueTres .imgMain {
+      width: 26%;
+      padding: 15px;
+      border: black solid 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      margin-bottom: 20px; }
+
+footer {
+  margin: 25px;
+  display: flex; }
+  footer .quienesSomos {
+    width: 80%; }
+    footer .quienesSomos .h2Index {
+      width: 40%;
+      margin-bottom: 10px;
+      border: #131338 solid 4px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 35px; }
+      footer .quienesSomos .h2Index:hover {
+        background-color: #8c8cd4; }
+    footer .quienesSomos .h3Index {
+      font-size: 25px; }
+  footer .redes {
+    display: flex;
+    width: 25%;
+    align-items: right;
+    justify-content: flex-end; }
+    footer .redes .telefono {
+      margin-top: 40px;
+      font-size: 20px;
+      text-align: center; }
+    footer .redes img {
+      justify-content: flex-end;
+      width: 100px; }
+
+/*SCSS PRODUCTOS.HTML*/
+.mainProd {
+  display: grid;
+  font-family: 'Mulish', sans-serif;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "textoProd textoProd" "uno dos" "tres cuatro" "cinco seis"; }
+  .mainProd .textoProd {
+    grid-area: textoProd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .mainProd .textoProd h1 {
+      text-align: center;
+      font-size: 40px;
+      margin: 20px; }
+    .mainProd .textoProd h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px; }
+  .mainProd img {
+    width: 90%;
+    height: 400px; }
+  .mainProd .imgProdUno {
+    grid-area: uno;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+  .mainProd .imgProdDos {
+    grid-area: dos;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+  .mainProd .imgProdTres {
+    grid-area: tres;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+  .mainProd .imgProdCuatro {
+    grid-area: cuatro;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+  .mainProd .imgProdCinco {
+    grid-area: cinco;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+  .mainProd .imgProdSeis {
+    grid-area: seis;
+    margin: 15px;
+    padding: 10px;
+    border: black solid 5px; }
+
+.h2Prod {
+  display: flex;
+  width: 30%;
+  padding: 5px;
+  font-size: 25px;
+  border: #161658 solid 4px;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center; }
+
+.h3Prod {
+  padding: 3px;
+  margin: 10px;
+  font-size: 25px; }
+
+/*SCSS INFOTEC.HTML*/
+.mainInfoTec .contenedorit {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  .mainInfoTec .contenedorit .bloqueIt {
+    display: flex; }
+    .mainInfoTec .contenedorit .bloqueIt .carousel {
+      width: 30%;
+      margin: 20px;
+      padding: 10px;
+      border: black solid 5px; }
+    .mainInfoTec .contenedorit .bloqueIt .contenedorTextoMain {
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      margin-left: 30px;
+      width: 60%; }
+      .mainInfoTec .contenedorit .bloqueIt .contenedorTextoMain h2 {
+        font-weight: bold; }
+      .mainInfoTec .contenedorit .bloqueIt .contenedorTextoMain .textoMainIt {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center; }
+
+.h2InfoTec {
+  display: flex;
+  width: 18%;
+  padding: 5px;
+  font-size: 25px;
+  border: #09094d solid 4px;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center; }
+
+.h3InfoTec {
+  margin: 15px;
+  padding: 5px;
+  font-size: 20px; }
+
+/*SCSS M&M.HTML*/
+.bodyMm {
+  background-image: linear-gradient(to right, #dbd6d6, #868585); }
+  .bodyMm .mainMm {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    text-align: center; }
+    .bodyMm .mainMm .tituloMm {
+      font-size: 70px;
+      display: flex;
+      align-items: center; }
+    .bodyMm .mainMm .subtituloMm {
+      font-size: 35px;
+      display: flex;
+      align-items: center; }
+    .bodyMm .mainMm .imgBaldozas {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .bodyMm .mainMm .imgBaldozas img {
+        margin: 35px;
+        padding: 10px;
+        width: 23%;
+        display: flex;
+        align-items: center;
+        border: black solid 6px;
+        box-shadow: #26394d 0px 20px 30px -10px; }
+    .bodyMm .mainMm .bloqueInfo .masInfoMm {
+      font-size: 40px;
+      display: flex;
+      align-items: center; }
+    .bodyMm .mainMm .bloqueInfo .dataMm {
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+
+.footerMm {
+  display: flex;
+  font-size: 25px; }
+
+/*SCSS CONTACTO.HTML*/
+.mainContacto {
+  width: auto;
+  min-height: 900px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_993004-MLA33042530856_112019-O.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  .mainContacto .h2MainContacto {
+    display: flex;
+    width: 40%;
+    margin: 30px;
+    padding: 20px;
+    font-size: 35px;
+    border: #13133d solid 4px;
+    border-radius: 50px;
+    justify-content: center; }
+  .mainContacto .containerC {
+    border: solid black 5px;
+    padding: 30px; }
+
+/*MEDIAQUERIES*/
+/*MEDIAQUERIES ADAPTACION CELULAR*/
+/*MENU ADAPTACION CELULAR INDEX*/
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  body {
+    background: linear-gradient(90deg, #d0ddf1 0%, #ebf1f6 93%); }
+    body header {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "titulo menuM" "logo menuM";
+      height: 500px;
+      width: 97%;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; }
+      body header .bloqueLogoTitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin-left: 25px; }
+        body header .bloqueLogoTitulo .h1Index {
+          width: auto;
+          grid-area: titulo;
+          font-size: 1.875rem; }
+        body header .bloqueLogoTitulo .bloqueLogo {
+          width: 60%;
+          max-width: 246px;
+          grid-area: logo; }
+          body header .bloqueLogoTitulo .bloqueLogo .logo {
+            width: 100%; }
+      body header .bloqueMenu {
+        margin-bottom: 30px; }
+        body header .bloqueMenu .menu {
+          grid-area: menuM;
+          display: grid;
+          grid-template-columns: auto;
+          justify-content: end;
+          align-content: end; }
+          body header .bloqueMenu .menu li a {
+            font-size: 20px;
+            padding: 10px; }
+  /*PRESENTACION INICIO INDEX*/
+  body .indexMain {
+    background-image: none; }
+    body .indexMain .tituloMain {
+      font-size: 60px;
+      text-align: center;
+      color: #05057c; }
+    body .indexMain .bloqueUno {
+      display: grid;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      margin: 5px; }
+      body .indexMain .bloqueUno img {
+        margin: 10px;
+        width: 100%; }
+      body .indexMain .bloqueUno .parrafoMain {
+        display: grid;
+        justify-items: center;
+        margin: 15px; }
+        body .indexMain .bloqueUno .parrafoMain h3 {
+          font-size: 30px;
+          margin-bottom: 10px; }
+    body .indexMain .bloqueDos {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "imagen" "frase";
+      margin: 15px 0px;
+      justify-items: center;
+      align-items: center; }
+      body .indexMain .bloqueDos h3 {
+        grid-area: frase;
+        font-size: 35px;
+        margin: 15px;
+        text-align: center;
+        margin-top: 40px; }
+      body .indexMain .bloqueDos img {
+        grid-area: imagen;
+        margin: 10px;
+        width: 100%; }
+    body .indexMain .bloqueTres {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: center; }
+      body .indexMain .bloqueTres img {
+        justify-self: center;
+        margin: 10px;
+        width: 100%; }
+      body .indexMain .bloqueTres p {
+        font-size: 35px;
+        text-align: center;
+        margin: 10px; }
+  body .footerIndex .redes {
+    display: none; }
+  body .footerIndex .quienesSomos {
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
+    body .footerIndex .quienesSomos .h2Index {
+      width: 60%;
+      margin-top: 10px; }
+  /*MEDIAQUERIES ADAPTACION CELULAR INFOTEC.HTML*/
+  .mainInfoTec .contenedorit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainInfoTec .contenedorit .bloqueIt {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainInfoTec .contenedorit .bloqueIt .carousel {
+        width: 80%; }
+      .mainInfoTec .contenedorit .bloqueIt .contenedorTextoMain {
+        display: flex;
+        justify-items: center;
+        width: 90%;
+        font-size: 35px; }
+      .mainInfoTec .contenedorit .bloqueIt h2 {
+        font-size: 40px; }
+  .quienesSomos {
+    width: 100%; }
+    .quienesSomos .h2InfoTec {
+      width: 60%; }
+    .quienesSomos .h3InfoTec {
+      font-size: 30px;
+      width: 100%; }
+  .redes img {
+    display: none; }
+  .redes .telefono {
+    display: none; }
+  /*MEDIAQUERIES ADAPTACION CELULAR CONTACTO.HTML*/
+  .mainContacto {
+    background-image: none; }
+    .mainContacto .h2MainContacto {
+      width: 70%; }
+    .mainContacto .container {
+      margin: 15px; }
+  /*MEDIAQUERIES ADAPTACION CELULAR PRODUCTOS.HTML*/
+  .mainProd {
+    display: flex;
+    flex-direction: column; } }
+
+/*MEDIAQUERIES ADAPTACION CELULAR MYM.HTML*/
+.bodyMm {
+  display: grid;
+  grid-template-areas: "headerMm" "mainMm" "footerMm"; }
+  .bodyMm .headerMm {
+    grid-area: headerMm; }
+  .bodyMm .mainMm {
+    display: grid;
+    grid-area: mainMm;
+    grid-template-columns: auto;
+    justify-content: center; }
+    .bodyMm .mainMm .tituloMm {
+      margin: 0px; }
+    .bodyMm .mainMm .subtituloMm {
+      font-size: 25px;
+      width: 87%;
+      margin-top: 15px; }
+    .bodyMm .mainMm .imgBaldozas {
+      display: flex;
+      flex-direction: column; }
+      .bodyMm .mainMm .imgBaldozas img {
+        margin: 30px 10px;
+        padding: 10px;
+        width: 65%; }
+  .bodyMm .bloqueInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px; }
+    .bodyMm .bloqueInfo .masInfoMm {
+      font-size: 30px; }
+    .bodyMm .bloqueInfo .dataMm {
+      font-size: 30px;
+      width: 80%;
+      text-align: center;
+      margin-left: 20px; }
+  .bodyMm .footerMm {
+    grid-area: footerMm;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .bodyMm .footerMm .quienesSomos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-content: center; }
+      .bodyMm .footerMm .quienesSomos .h2Mm {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 70px;
+        justify-content: center;
+        align-content: center;
+        margin-right: 60px; }
+    .bodyMm .footerMm .redes {
+      display: none; }
