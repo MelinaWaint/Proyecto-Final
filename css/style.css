@@ -585,3 +585,120 @@ footer {
           margin-right: 60px; }
       .bodyMm .footerMm .redes {
         display: none; } }
+
+/*MEDIAQUERIES ADAPTACION TABLETA*/
+/*MEDIAQUERIES ADAPTACION TABLET INDEX.HTML*/
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  body {
+    background-color: #d6d6e7;
+    width: 100%; }
+    body header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 7px;
+      height: 260px; }
+      body header .bloqueLogoTitulo {
+        justify-content: center;
+        height: 100px;
+        margin-top: 30px; }
+        body header .bloqueLogoTitulo .bloqueLogo .logo {
+          padding: 15px;
+          width: 70%; }
+      body header .bloqueMenu {
+        display: flex; }
+      body header .bloqueMenu .menu {
+        justify-content: space-evenly; }
+    body .indexMain {
+      background-image: none; }
+      body .indexMain .bloqueDos h3 {
+        margin-left: 50px; }
+      body .indexMain .imgMain {
+        margin: 30px 15px; }
+    body .quienesSomos {
+      margin: 30px 0px; }
+      body .quienesSomos .hDIndex {
+        width: 40%; }
+  /*MEDIAQUERIES ADAPTACION TABLET PRODUCTOS.HTML*/
+  .mainProd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainProd .textoProd {
+      width: 85%; }
+    .mainProd img {
+      height: 500px; }
+  .quienesSomos .hTProd {
+    width: 70%;
+    font-size: 35px; }
+  .quienesSomos .h3Prod {
+    font-size: 30px; }
+  /*MEDIAQUERIES ADAPTACION TABLET INFOTEC.HTML*/
+  .quienesSomos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 90%; }
+    .quienesSomos .hTInfoTec {
+      font-size: 35px;
+      width: 40%; }
+    .quienesSomos .h3InfoTec {
+      font-size: 30px; }
+  /*MEDIAQUERIES ADAPTACION TABLET MM.HTML*/
+  .bodyMm {
+    background-image: linear-gradient(to left, #ccc5c5, #f5f1f1); }
+    .bodyMm .mainMm .subtituloMm {
+      width: 90%; }
+    .bodyMm .mainMm .imgBaldozas {
+      display: flex;
+      flex-direction: column; }
+      .bodyMm .mainMm .imgBaldozas img {
+        width: 60%; }
+    .bodyMm .mainMm .dataMm h5 {
+      font-size: 40px; }
+    .bodyMm .footerMm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      font-size: 40px; }
+      .bodyMm .footerMm .redes {
+        width: 40%; }
+        .bodyMm .footerMm .redes .telefono {
+          width: auto;
+          font-size: 30px; }
+  /*MEDIAQUERIES ADAPTACION TABLET CONTACTO.HTML*/
+  .mainContacto {
+    display: flex;
+    justify-content: space-around; }
+    .mainContacto .h2MainContacto {
+      width: 60%; }
+  .mainContacto .container {
+    width: 100%; }
+    .mainContacto .container label {
+      font-size: 30px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .quienesSomos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .quienesSomos .h2InfoTec {
+        width: 40%;
+        border: #13133d solid 4px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px; }
+      footer .quienesSomos .h3InfoTec {
+        text-align: center;
+        font-size: 30px; }
+    footer .redesCont {
+      justify-content: center;
+      width: 100%; }
+      footer .redesCont img {
+        width: 10%; } }
