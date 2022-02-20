@@ -1,41 +1,4 @@
 
-    /*MEDIAQUERIES ADAPTACION CELULAR MM.HTML*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    .quienesSomos h2{
-        width: 100%;
-        padding: 5px;
-        font-size: 25px;
-        justify-content: center;
-        align-content: center;
-
-    }
-
-
-
-    .bloqueInfo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 20px;
-    }
-
-}
 
     /*MEDIAQUERIES ADAPTACION TABLETA*/
 
