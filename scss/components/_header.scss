@@ -16,7 +16,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 230px;
+    height: 185px;
 
     .bloqueLogoTitulo{
         display: flex;
@@ -29,12 +29,12 @@ header{
 
         .h1Index{
             display: inline-block;
-            width: 50%;
+            width: 45%;
             padding: 10px 15px;
             border: rgb(22, 22, 122) solid 4px;
             border-radius: 50px;
             color: rgb(39, 39, 148);
-            font-size: 30px;
+            font-size: 28px;
         }
 
         .bloqueLogo{
@@ -43,7 +43,7 @@ header{
             min-width: 200px;
 
             .logo{
-                width: 100%;
+                width: 75%;
             }
         }
     }
@@ -67,7 +67,7 @@ header{
                 border: rgb(16, 16, 121) solid 3px;
                 border-radius: 60px;
                 text-decoration: none;
-                font-size: 23px;
+                font-size: 18px;
                 color:black;
                 text-align: center;   
 

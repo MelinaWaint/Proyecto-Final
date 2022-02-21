@@ -13,7 +13,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 230px; }
+  height: 185px; }
   header .bloqueLogoTitulo {
     display: flex;
     flex-direction: row;
@@ -24,18 +24,18 @@ header {
     margin: 5px; }
     header .bloqueLogoTitulo .h1Index {
       display: inline-block;
-      width: 50%;
+      width: 45%;
       padding: 10px 15px;
       border: #16167a solid 4px;
       border-radius: 50px;
       color: #272794;
-      font-size: 30px; }
+      font-size: 28px; }
     header .bloqueLogoTitulo .bloqueLogo {
       width: 25%;
       max-width: 246px;
       min-width: 200px; }
       header .bloqueLogoTitulo .bloqueLogo .logo {
-        width: 100%; }
+        width: 75%; }
   header .bloqueMenu {
     display: inline-block;
     padding: 5px;
@@ -53,7 +53,7 @@ header {
         border: #101079 solid 3px;
         border-radius: 60px;
         text-decoration: none;
-        font-size: 23px;
+        font-size: 18px;
         color: black;
         text-align: center; }
         header .bloqueMenu .menu li a:hover {
@@ -95,10 +95,10 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
       .indexMain .bloqueUno .parrafoMain h2 {
         font-size: 40px; }
       .indexMain .bloqueUno .parrafoMain p {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold; }
     .indexMain .bloqueUno .imgMain {
-      width: 30%;
+      width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
@@ -110,10 +110,13 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
     align-items: center;
     margin: 0px 20px; }
     .indexMain .bloqueDos h3 {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      padding: 20px;
       margin-right: 40px;
-      font-size: 50px; }
+      width: 60%;
+      font-size: 40px; }
     .indexMain .bloqueDos .imgMain {
-      width: 26%;
+      width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
@@ -124,12 +127,12 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
     justify-content: start;
     align-items: center;
     margin: 0px 20px;
-    font-size: 35px; }
+    font-size: 30px; }
     .indexMain .bloqueTres p {
       margin-left: 20px;
       font-weight: bold; }
     .indexMain .bloqueTres .imgMain {
-      width: 26%;
+      width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -340,7 +343,7 @@ footer {
     width: 40%;
     margin: 30px;
     padding: 20px;
-    font-size: 35px;
+    font-size: 30px;
     border: #13133d solid 4px;
     border-radius: 50px;
     justify-content: center; }

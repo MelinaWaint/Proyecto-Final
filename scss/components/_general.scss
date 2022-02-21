@@ -50,13 +50,13 @@
             }
 
             p{
-                font-size: map-get($fonts,mdt);
+                font-size: map-get($fonts,mdd);
                 font-weight: bold;
             }
         }
 
         .imgMain{
-            width: 30%;
+            width: 20%;
             padding: 15px;
             border: black solid 7px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -73,12 +73,15 @@
         margin: 0px 20px;
 
         h3{
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            padding: 20px;
             margin-right: 40px;
-            font-size: map-get($fonts,mds);
+            width: 60%;
+            font-size: map-get($fonts,mdc);
         }
 
         .imgMain{
-            width: 26%;
+            width: 20%;
             padding: 15px;
             border: black solid 7px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -93,7 +96,7 @@
         justify-content: start;
         align-items: center;
         margin: 0px 20px;
-        font-size: map-get($fonts,mdtt);
+        font-size: map-get($fonts,mdt);
             
         p{
             margin-left: 20px;
@@ -101,7 +104,7 @@
         }
 
         .imgMain{
-            width: 26%;
+            width: 20%;
             padding: 15px;
             border: black solid 7px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -396,7 +399,7 @@
                 display: flex;
                 width: 40%;
                 @include sizes (30px,20px);
-                font-size: map-get($fonts, mdtt);
+                font-size: map-get($fonts, mdt);
                 border: rgb(19, 19, 61) solid 4px;
                 border-radius: 50px;
                 justify-content: center;
