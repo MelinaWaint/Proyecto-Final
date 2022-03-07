@@ -98,7 +98,7 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
         font-size: 25px;
         font-weight: bold; }
     .indexMain .bloqueUno .imgMain {
-      width: 20%;
+      max-width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
@@ -110,13 +110,14 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
     align-items: center;
     margin: 0px 20px; }
     .indexMain .bloqueDos h3 {
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      background-color: rgba(243, 243, 243, 0.295);
+      box-shadow: rgba(196, 189, 189, 0.315) 0px 15px 25px, rgba(219, 213, 213, 0.692) 0px 5px 10px;
       padding: 20px;
       margin-right: 40px;
       width: 60%;
       font-size: 40px; }
     .indexMain .bloqueDos .imgMain {
-      width: 20%;
+      max-width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
@@ -132,7 +133,7 @@ header .bloqueMenu .menu .inicio, header .bloqueMenu .menu .productos, header .b
       margin-left: 20px;
       font-weight: bold; }
     .indexMain .bloqueTres .imgMain {
-      width: 20%;
+      max-width: 20%;
       padding: 15px;
       border: black solid 7px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -149,7 +150,7 @@ footer {
       border: #131338 solid 4px;
       border-radius: 50px;
       text-align: center;
-      font-size: 35px; }
+      font-size: 30px; }
       footer .quienesSomos .hDIndex:hover {
         background-color: #8c8cd4; }
     footer .quienesSomos .h3Index {
@@ -417,9 +418,9 @@ footer {
       justify-items: center;
       align-items: center;
       margin: 5px; }
-      body .indexMain .bloqueUno img {
+      body .indexMain .bloqueUno .imgMain {
         margin: 10px;
-        width: 100%; }
+        max-width: 80%; }
       body .indexMain .bloqueUno .parrafoMain {
         display: grid;
         justify-items: center;
@@ -441,20 +442,20 @@ footer {
         margin: 15px;
         text-align: center;
         margin-top: 40px; }
-      body .indexMain .bloqueDos img {
+      body .indexMain .bloqueDos .imgMain {
         grid-area: imagen;
         margin: 10px;
-        width: 100%; }
+        max-width: 67%; }
     body .indexMain .bloqueTres {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto auto;
       justify-items: center;
       align-items: center; }
-      body .indexMain .bloqueTres img {
+      body .indexMain .bloqueTres .imgMain {
         justify-self: center;
         margin: 10px;
-        width: 100%; }
+        max-width: 74%; }
       body .indexMain .bloqueTres p {
         font-size: 35px;
         text-align: center;

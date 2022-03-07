@@ -83,6 +83,7 @@
                 color: rgb(5, 5, 124);
             }
 
+            
             .bloqueUno{
                 display: grid;
                 flex-direction: column;
@@ -90,9 +91,9 @@
                 align-items: center;
                 margin: 5px;
 
-                img{
+                .imgMain{
                     margin: 10px;
-                    width: 100%;
+                    max-width: 80%;
                 }
 
                 .parrafoMain{
@@ -131,10 +132,10 @@
                     margin-top: 40px;
                 }
 
-                img{
+                .imgMain{
                     grid-area: imagen;
                     margin: 10px;
-                    width: 100%;
+                    max-width: 67%;
                 }
             }
 
@@ -145,10 +146,10 @@
                 justify-items: center;
                 align-items: center;
 
-                img{
+                .imgMain{
                     justify-self: center;
                     margin: 10px;
-                    width: 100%;
+                    max-width: 74%;
                 }
 
                 p{
